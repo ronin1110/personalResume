@@ -1,0 +1,59 @@
+
+    .manage-tab .van-tab--active{ 
+        /* font-size: 16px !important;
+        font-weight: 500 !important;
+        color: #1E99FF !important;    */
+    }
+    .manage-tab .van-tabs__line{
+            width: 16px;
+            height: 2px;
+            background: #3396F9;
+            border-radius: 2px;
+    }
+    .manage-tab .van-tabs--line .van-tabs__wrap{
+            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    }
+    .select-house{
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 8px;
+        margin-top:10px ;
+    }
+    .select-house .select-house-address{
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #1A1A1A;
+    }
+    .select-house .select-house-detail{
+        margin-top: 6px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #504F4F;
+    }
+    .select-house .select-house-img{
+        display: flex;
+        justify-content: space-between;
+        height: 22px;
+        align-items: center;
+    }
+    .select-house .select-house-img .detail-change img{
+        height: 22px;
+        width: 58px;
+    }
+    .detail-img{
+        display: flex;
+        align-items: center;
+        height: 52px;
+    }
+    .detail-img img{
+        height: 17px;
+        width: 17px;
+        margin-top: -2px;
+    }
+    .detail-img .img-span{
+        padding-left: 3px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #1A1A1A;
+    }

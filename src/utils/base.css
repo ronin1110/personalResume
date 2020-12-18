@@ -1,0 +1,710 @@
+@import url('./reset.css');
+@import url('./basic.css');
+@import url('./house.css');
+body {
+    font-size: 14px;
+    color: rgba(0, 0, 0, .85);
+    padding: 0;
+    margin: 0;
+    font-family: PingFangSC-Regular, PingFang SC;
+}
+
+/*-----文字样式-----*/
+
+.minor-text {
+    color: #909399;
+}
+
+/*----统一的内容 样式----*/
+.custom-content {
+    padding: 24px 24px 0 24px;
+    background-color: white;
+    height: calc(100vh - 120px);
+    /* min-width: 1210px; */
+}
+
+/*----el-dialog 样式----*/
+
+.el-dialog {
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(228, 231, 237, 1);
+}
+
+/* .v-modal {
+    opacity: 0;
+} */
+
+/*----end el-dialog 样式----*/
+
+/*----el-table 样式----*/
+
+.table-box {
+    padding: 20px 0;
+}
+
+.custom-table-tr--hover:hover {
+    cursor: pointer;
+}
+
+.el-table__row .el-button {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+/*----end el-table 样式----*/
+
+/*----el-pagination 样式----*/
+
+.custom-pagination {
+    display: flex;
+    padding: 8px 24px;
+}
+
+.custom-pagination>div:first-child>i {
+    display: inline-block;
+    width: 24px;
+}
+
+.custom-pagination>div:last-child {
+    /* flex-grow: 1; */
+}
+
+.custom-pagination {
+    justify-content: flex-end;
+}
+
+/*----end el-pagination 样式----*/
+
+/*----el-tabs----*/
+
+.custom-tabs .el-tabs__nav {
+    transform: translateX(18px) !important;
+}
+
+.custom-tabs .el-tabs__header {
+    margin-bottom: 0;
+}
+
+/*----end el-tabs 样式----*/
+
+/*----el-button----*/
+.el-button--small {
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+}
+
+.el-button--text {
+    font-size: 13px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #409eff;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.el-button--small,
+.el-button--small.is-round {
+    padding: 8px 15px;
+}
+
+.el-table__body td .el-button--mini,
+.el-table__body td .el-button--small {
+    font-size: 14px;
+}
+
+/* 文字颜色 */
+
+.color-success {
+    color: #67c23a !important;
+}
+
+.color-warning {
+    color: #e6a23c !important;
+}
+
+.color-danger {
+    color: #f56c6c !important;
+}
+
+.color-info {
+    color: #909399 !important;
+}
+
+.color-primary {
+    color: #409eff !important;
+}
+
+/* btn之间的竖线 */
+
+.vertical-line {
+    border-left: 1px solid #e9e9e9;
+    padding-right: 10px;
+    margin-left: 10px;
+}
+
+/*----end el-button 样式----*/
+
+.common-line {
+    width: 100%;
+    border-top: 1px solid #e9e9e9;
+}
+
+.space-between {
+    width: 32px;
+    display: inline-block;
+}
+
+.input-width-rest-200 .el-input {
+    width: 200px !important;
+}
+
+.input-width-rest-300 .el-input {
+    width: 300px !important;
+}
+
+.input-width-rest-134 .el-input {
+    width: 134px;
+}
+
+.el-form-item__label {
+    color: #303133;
+    font-size: 14px;
+}
+
+.m-t-80 {
+    margin-top: 80px !important;
+}
+
+.m-l-80 {
+    margin-left: 80px;
+}
+
+.m-l-50 {
+    margin-left: 20px !important;
+}
+
+.m-r-20 {
+    margin-right: 20px;
+}
+
+.info-footer {
+    float: right;
+    margin-right: 24px;
+}
+
+.el-input__count-inner {
+    line-height: initial;
+}
+
+/*--------自定义table的样式-------------*/
+
+.custom-body {
+    /* min-width: 1024px; */
+    height: 100%;
+    background: #FFF;
+}
+
+.custom-tools {
+    padding: 24px 16px 0px 16px;
+    background-color: #fff;
+}
+
+.custom-tools .el-select--small {
+    width: 100%;
+}
+
+.custom-tools .el-form-item__content {
+    /* width: calc(100% - 86px); */
+}
+
+/*---- 自定义panel 样式----*/
+
+.custom-panel {
+    background: #fff;
+    border-radius: 2px;
+    padding: 20px 16px 0px 16px;
+}
+
+.custom-panel+.custom-panel {
+    margin-top: 20px;
+}
+
+.custom-panel__head {
+    color: #303133;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 32px;
+    line-height: 54px;
+    border-bottom: 1px solid #e9e9e9;
+    margin: -24px -24px 0;
+}
+
+.custom-panel__item {
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+.custom-panel__subtitle {
+    font-size: 14px;
+    font-family: PingFangSC;
+    font-weight: 500;
+    color: rgba(48, 49, 51, 1);
+    line-height: 24px;
+    width: 50%;
+    padding: 24px 0 32px 0 !important;
+}
+
+.custom-panel__body {
+    padding: 10px 24px;
+    margin: 0 -24px;
+}
+
+/*----end 自定义panel 样式----*/
+
+/*---- 固定底部的 button 条 ----*/
+
+.fixed-bottom-buttons {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 150px;
+    height: 56px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.03);
+    text-align: center;
+    padding-top: 12px;
+    padding-right: 24px;
+    box-sizing: border-box;
+}
+
+/*---- end 固定底部的 button 条 ----*/
+
+/*----start 超出宽度省略显示-----*/
+
+.text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 120px;
+    display: block;
+}
+
+/*----end 超出宽度省略显示-----*/
+
+/*----el-card----*/
+
+.box-card {
+    margin-top: 12px;
+    box-shadow: none;
+}
+
+.box-card:first-child {
+    margin-top: 0;
+}
+
+.box-card .el-card__header {
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.box-card .el-card__body {
+    padding-bottom: 0;
+}
+
+/*----el-card end----*/
+
+/*----修改表格的头部样式 start----*/
+
+.custom-table-header th {
+    background-color: #F5F7Fa !important;
+    border-bottom: none !important;
+}
+
+/*----修改表格的头部样式 end----*/
+
+/*----修复打包后的el-date-range 里面的分隔符被压缩空间的bug----*/
+
+.el-date-editor--daterange .el-range-separator {
+    box-sizing: content-box;
+}
+
+/*----el-date-range end----*/
+
+.clear:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clear {
+    zoom: 1;
+}
+
+.w-206 {
+    width: 206px!important;
+}
+
+.form-gray-block {
+    background-color: #f8f8f8;
+    padding-top: 20px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-gray {
+    background-color: #f8f8f8;
+    padding: 20px 0 0 0;
+}
+
+.bg-gray .el-form-item {
+    margin-right: 48px;
+    margin-bottom: 20px;
+}
+
+.bg-gray .el-form-item:first-child .el-form-item__label {
+    width: 130px !important;
+    flex-shrink: 0;
+}
+
+@media screen and (min-width: 1000px) {
+    ::-webkit-scrollbar {
+        width: 0px;
+        height: 8px;
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: rgba(123, 129, 144, 0.6);
+    }
+
+    ::-webkit-scrollbar-track,
+    ::-webkit-scrollbar-corner {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        background-color: transparent;
+    }
+}
+
+.el-tabs__nav-wrap:after {
+    background-color: #dcdfe6;
+}
+
+.pt-1 {
+    padding-top: 1px !important;
+}
+
+.pt-10 {
+    padding-top: 10px !important;
+}
+
+.pt-20 {
+    padding-top: 20px !important;
+}
+
+.pb-20 {
+    padding-bottom: 20px !important;
+}
+
+.pl-0 {
+    padding-left: 0px !important;
+}
+
+.ml-20 {
+    margin-left: 20px !important;
+}
+
+.mt-0 {
+    margin-top: 0px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mb-0 {
+    margin-bottom: 0px !important;
+}
+
+.mb-12 {
+    margin-bottom: 12px !important;
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.mb-32 {
+    margin-bottom: 32px !important;
+}
+
+.mb-40 {
+    margin-bottom: 40px !important;
+}
+
+.long-doc .el-form-item__error {
+    position: relative;
+}
+
+.long-doc .el-form-item {
+    margin-bottom: 32px;
+}
+
+.tips {
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(144, 147, 153, 1);
+    line-height: 12px;
+    margin-top: 4px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.relative {
+    position: relative;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.custom-pagination__btn {
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+.custom-pagination {
+    position: relative;
+}
+.custom-pagination__interval {
+  display: inline-block;
+  width: 24px
+}
+
+.el-tabs__nav-wrap::after {
+    background-color: #ebeef5;
+}
+
+.el-table th>.cell {
+    color: #303133;
+    font-weight: 400;
+}
+
+.system-bill__list-total {
+    margin-bottom: 20px !important;
+}
+
+.system-bill__list-total__table {
+    height: 116px;
+    background: rgba(248, 248, 248, 1);
+    display: flex
+}
+
+.system-bill__list-total__table em {
+    width: 1px;
+    height: 76px;
+    background-color: #DCDFE6;
+    margin-top: 20px;
+}
+
+.system-bill__list-total__table-item {
+    width: 227px;
+    height: 100%;
+}
+
+.system-bill__list-total__table-item__num {
+    margin-top: 40px;
+    font-size: 18px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: rgba(48, 49, 51, 1);
+    line-height: 22px;
+    width: 100%;
+    height: 22px;
+    text-align: center
+}
+
+.system-bill__list-total__table-item__text {
+    margin-top: 16px;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(144, 147, 153, 1);
+    line-height: 18px;
+    width: 100%;
+    text-align: center
+}
+
+.el-button+.el-button {
+    margin-left: 12px !important;
+}
+
+.search-bg {
+    margin:20px 0;
+    background-color: #f8f8f8;
+    padding-top: 20px;
+}
+.fx-sp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/**表单中灰色文案提示**/
+.edit-info{
+    font-size:12px;
+    color:#909399;
+    margin:0;
+}
+/* 用于输入框，有限制字数并显示时，文字遮盖，2:表示为两位数，clear:携带清除按钮 */
+.text-over-2 .el-input__inner {
+  padding-right: 48px !important;
+}
+.text-over-2 .el-textarea__inner {
+  padding-right: 48px !important;
+}
+.text-over-3 .el-textarea__inner {
+  padding-right: 62px !important;
+}
+.text-over-2--clear .el-input__inner {
+  padding-right: 70px !important;
+}
+.el-message {
+  top: 74px !important;
+}
+.el-tooltip__popper {
+  max-width: 300px;
+}
+.el-table-column--selection .cell {
+  padding-left: 10px !important;
+}
+.word-break {
+  word-wrap: break-word !important;
+  word-break: break-all !important;
+}
+.pointer__input input {
+  cursor: pointer;
+}
+.custom-popper--overflow .el-tooltip {
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+  max-width: 100%;
+}
+.custom-menu-container.el-menu {
+  border-right: none;
+}
+.custom-menu-container .el-menu-item {
+  height: 40px;
+  line-height: 40px;
+  padding-right: 0 !important;
+}
+.custom-menu-container .el-submenu .el-menu-item {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 38px !important;
+  padding-right: 0 !important;
+  min-width: auto;
+}
+.custom-menu-container .el-menu-item.is-active,
+.custom-menu-container .el-menu-item:hover,
+.custom-menu-container .el-menu-item:focus {
+  background-color: #E6E6E6 !important;
+  color: #303133 !important;
+}
+.custom-menu-container .el-submenu__title {
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  padding-left: 30px !important;
+  color: #303133 !important;
+  font-weight: 600;
+}
+.custom-menu-container .el-submenu__title:hover {
+  background-color: #E6E6E6 !important;
+}
+.custom-menu-container .el-submenu__icon-arrow {
+  left: 10px !important;
+  right: auto !important;
+  margin-top: -6px !important;
+}
+/* form表单label和内容一行，然后内容在当前区域自动换行，不会置顶(水平)换行 */
+.custom-form__content {
+  display: flex !important;
+}
+.custom-form__content .el-form-item__label {
+  flex-shrink: 0;
+}
+.custom-form__content .el-form-item__content {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+/* 一行文本显示限制，多的... */
+.text-overline-limit--1 {
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/* 2行文本显示限制，多的... */
+.text-overline-limit--2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: initial;
+  overflow: hidden;
+}
+.custom-tabs .van-tab--active {
+  font-size: 17px;
+  font-weight: 500;
+}
+.custom-tabs--circle .van-tab__text {
+  padding: 4px 12px;
+  background: #F3F5F7;
+  border-radius: 12px;
+  color: #222222;
+  font-weight: 400;
+}
+.custom-tabs--circle .van-tab--active .van-tab__text {
+  color: #3396F9;
+  background: #D7EBFF;
+}
+.custom-tabs--circle .van-tabs__line {
+  display: none;
+}
+.custom-tabs--circle .van-tab--active {
+  font-size: inherit;
+  font-weight: inherit;
+}
+.custom__input-limit-with .el-select,
+.custom__input-limit-with .el-textarea,
+.custom__input-limit-with .el-input {
+  width: 230px !important;
+}
+
