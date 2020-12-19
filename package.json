@@ -1,5 +1,5 @@
 {
-  "name": "sheqingtong",
+  "name": "roninResume",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
   "dependencies": {
     "@dsb-norge/vue-keycloak-js": "^1.1.2",
     "axios": "^0.19.2",
+    "jquery":"^3.3.1",
     "core-js": "^3.6.5",
     "dayjs": "^1.8.28",
     "dingtalk-jsapi": "^2.11.2",

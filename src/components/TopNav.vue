@@ -9,10 +9,10 @@
     <div class="topNav--init">
       <div class="first">
         <!-- <a href="#">姚霖</a> -->
-
-        <div style="position:relative">
-          <el-avatar class="avatar" src='https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2018205249,2032593992&fm=26&gp=0.jpg' :size='50'></el-avatar>
+        <div>
+          <image-flash class="avatar" src='https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2018205249,2032593992&fm=26&gp=0.jpg' :size= '50'></image-flash>
         </div>
+
         <div class="info" @mouseenter="handleMouseenter" @mouseleave="handleMouseleave" >
           <div>
             <span>{{name}}</span>
@@ -22,55 +22,101 @@
             <span>{{profession}}</span>
           </div>
         </div>
+
       </div>
+
+
+
+
       <div class="second">
-        <div class="item">
-          <a href="#">基本信息</a>
-        </div>
-        <div class="item">
-          <a href="#">基本信息</a>
-        </div>
-        <div class="item">
-          <a href="#">基本信息</a>
-        </div>
-        <div class="item">
-          <a href="#">基本信息</a>
-        </div>
+        <anchor href='#' text='关于我'></anchor>
+        <anchor href='#' text='经历'></anchor>
+        <anchor href='#' text='熟悉的技术'></anchor>
+        <anchor href='#' text='wode wode '></anchor>
+        <anchor href='#' text='wode wode '></anchor>
+
+
+
+
       </div>
+        <div class="card">
+          <image-flash  class="front" src='https://img-blog.csdnimg.cn/20200210114056830.jpeg?x-oss-process=image/resize,m_fixed,h_64,w_64' :size= "50"></image-flash>
+          <image-flash class="back" src='https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2018205249,2032593992&fm=26&gp=0.jpg' :size= '50'></image-flash>
+          <!-- <div style="background-color: red" class="front">periwporiewpoi</div>
+          <div style="background-color: green" class="back">periwporiewpoi</div> -->
+        </div>
 
     </div>  
   </div>
 </template>
 
 <script>
-  export default {
-    props: {
+import imageFlash from '../components/little-components/ImageFlash'
+import anchor from '../components/little-components/Anchor'
 
-    },
-    components: {
 
+export default {
+  props: {
+
+  },
+  components: {
+    imageFlash,
+    anchor
+  },
+  data(){
+    return {
+      flag: true,
+      name: '姚霖',
+      profession: '前端开发'
+    }
+  },
+  methods: {
+    handleMouseenter () {
+      this.name = 'Ronin769'
+      this.profession = '个人简历'
     },
-    data(){
-      return {
-        flag: true,
-        name: '姚霖',
-        profession: '前端开发'
-      }
-    },
-    methods: {
-      handleMouseenter () {
-        this.name = 'Ronin769'
-        this.profession = '个人简历'
-      },
-      handleMouseleave () {
-        this.name = '姚霖'
-        this.profession = '前端开发'
-      }
+    handleMouseleave () {
+      this.name = '姚霖'
+      this.profession = '前端开发'
     }
   }
+}
 </script>
 
 <style lang="less" scoped>
+.card{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 0;
+  top: 0;
+  .front{
+    
+    backface-visibility:hidden;
+    transition: all 2s;
+    position: absolute;
+    transform:rotateY(0deg)
+  }
+  &:hover .front{
+    transform: rotateY(180deg);
+  }
+
+  .back{
+    backface-visibility:hidden;
+    transition: all 2s;
+    position: absolute;
+    transform:rotateY(180deg)
+  }
+  &:hover .back{
+    transform: rotateY(0deg);
+  }
+
+}
+
+
+
+
+
 .topNav--init{
   display: flex;
   justify-content: space-between;
@@ -85,7 +131,7 @@
   // font-size: 20px;
 }
 .second{
-display: flex;
+  display: flex;
 }
 .item{
   font-size: 15px;
@@ -98,18 +144,7 @@ a{
 a:hover{
   color: #F4D03F;
 }
-.avatar::after{
-  content: '';
-  position: absolute;
-  height: 50px;
-  width: 50px;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  border-radius: 50%;
-  box-shadow: 0 0 10px 3px #38e;
-}
+
 .info{
   position: absolute;
   left: 70px;

@@ -22,7 +22,7 @@
     </div>
     
      <div class="about-me"></div> 
-    <div class="web-skill" style="background-color:red"></div>
+    <div id="web-skill" style="background-color:red"></div>
     <div class="my-experience"></div>
     <div class="contact-me"></div>
   </div>
@@ -53,7 +53,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.first-page, .about-me, .web-skill{
+.first-page, .about-me, #web-skill{
   position: relative;
   // overflow: visible;
   width: 100%;

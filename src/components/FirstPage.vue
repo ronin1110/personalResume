@@ -93,7 +93,7 @@
   background-clip: text; // 背景裁剪范围是文字
   
   animation: light-move 3s infinite;
-  	animation-direction:alternate;
+  animation-direction:alternate;
 
 }
 @keyframes light-move {

@@ -4,7 +4,12 @@
  * @Date: 2020-07-22 13:30:01
  * @LastEditors: yaolin
  */ 
+
+const webpack = require('webpack')
+
 module.exports = {
+
+
   publicPath: '',
 
   // 当运行 vue-cli-service build 时生成的生产环境构建文件的目录。
@@ -17,8 +22,20 @@ module.exports = {
   integrity: false,
 
   configureWebpack: {  // 用于调试
-    devtool: 'source-map'
+    devtool: 'source-map',
   },
+
+
+  configureWebpack: {
+    plugins: [
+      new webpack.ProvidePlugin({
+        $:"jquery",
+        jQuery:"jquery",
+        "windows.jQuery":"jquery"
+      })
+    ]
+  },
+
 
   devServer: {
     host: '0.0.0.0',
@@ -61,7 +78,8 @@ function PageReset (name, title) {
   // 模板来源
   this.template = 'public/index.html'
   // 在 dist/index.html 的输出
-  this.filename = `${name}.html`
+  // this.filename = `${name}.html`
+  this.filename = 'index.html'
   // 当使用 title 选项时，
   // template 中的 title 标签需要是 <title><%= htmlWebpackPlugin.options.title %></title>
   this.title = title

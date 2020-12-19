@@ -2,11 +2,12 @@
  * @Author: ronin769
  * @Date: 2020-07-22 13:33:54
  * @LastEditors: yaolin
- * @LastEditTime: 2020-12-18 23:43:47
+ * @LastEditTime: 2020-12-19 21:52:12
  * @Description: file content
  * @FilePath: \democracy-manage\src\entry\manage.js
  */ 
 import Vue from 'vue'
+import $ from 'jquery'
 import App from '../views/Manage.vue'
 // import '@/utils/base.css'
 import '@/utils/util.js'
@@ -45,5 +46,6 @@ new Vue({
   },
   router,
   store,
+  $,
   render: h => h(App)
 }).$mount('#app')
