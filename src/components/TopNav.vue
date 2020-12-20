@@ -9,8 +9,9 @@
     <div class="topNav--init">
       <div class="first">
         <!-- <a href="#">姚霖</a> -->
-        <div>
-          <image-flash class="avatar" src='https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2018205249,2032593992&fm=26&gp=0.jpg' :size= '50'></image-flash>
+        <div class="card">
+          <image-flash  class="front" src='https://img-blog.csdnimg.cn/20200210114056830.jpeg?x-oss-process=image/resize,m_fixed,h_64,w_64' :size= "50"></image-flash>
+          <image-flash class="back" src='https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2018205249,2032593992&fm=26&gp=0.jpg' :size= '50'></image-flash>
         </div>
 
         <div class="info" @mouseenter="handleMouseenter" @mouseleave="handleMouseleave" >
@@ -22,11 +23,7 @@
             <span>{{profession}}</span>
           </div>
         </div>
-
       </div>
-
-
-
 
       <div class="second">
         <anchor href='#' text='关于我'></anchor>
@@ -34,17 +31,12 @@
         <anchor href='#' text='熟悉的技术'></anchor>
         <anchor href='#' text='wode wode '></anchor>
         <anchor href='#' text='wode wode '></anchor>
-
-
-
-
       </div>
-        <div class="card">
-          <image-flash  class="front" src='https://img-blog.csdnimg.cn/20200210114056830.jpeg?x-oss-process=image/resize,m_fixed,h_64,w_64' :size= "50"></image-flash>
-          <image-flash class="back" src='https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2018205249,2032593992&fm=26&gp=0.jpg' :size= '50'></image-flash>
-          <!-- <div style="background-color: red" class="front">periwporiewpoi</div>
-          <div style="background-color: green" class="back">periwporiewpoi</div> -->
-        </div>
+
+      <!-- <div class="card">
+        <image-flash  class="front" src='https://img-blog.csdnimg.cn/20200210114056830.jpeg?x-oss-process=image/resize,m_fixed,h_64,w_64' :size= "50"></image-flash>
+        <image-flash class="back" src='https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2018205249,2032593992&fm=26&gp=0.jpg' :size= '50'></image-flash>
+      </div> -->
 
     </div>  
   </div>
@@ -61,7 +53,7 @@ export default {
   },
   components: {
     imageFlash,
-    anchor
+    anchor,
   },
   data(){
     return {
@@ -85,13 +77,13 @@ export default {
 
 <style lang="less" scoped>
 .card{
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 70px;
   position: relative;
+  display: flex;
+  align-items: center;
   left: 0;
-  top: 0;
   .front{
-    
     backface-visibility:hidden;
     transition: all 2s;
     position: absolute;
@@ -127,6 +119,7 @@ export default {
 }
 .first{
   display: flex;
+  align-items: center;
   margin-left: 10px;
   // font-size: 20px;
 }

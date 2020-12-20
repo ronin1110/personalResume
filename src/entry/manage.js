@@ -2,17 +2,21 @@
  * @Author: ronin769
  * @Date: 2020-07-22 13:33:54
  * @LastEditors: yaolin
- * @LastEditTime: 2020-12-19 21:52:12
+ * @LastEditTime: 2020-12-20 16:09:54
  * @Description: file content
  * @FilePath: \democracy-manage\src\entry\manage.js
  */ 
 import Vue from 'vue'
 import $ from 'jquery'
 import App from '../views/Manage.vue'
+
+import AOS from "aos";
+import "../../node_modules/aos/dist/aos.css";
+
 // import '@/utils/base.css'
-import '@/utils/util.js'
-import '@/utils/extend.js'
-import '@/utils/directives.js'
+// import '@/utils/util.js'
+// import '@/utils/extend.js'
+// import '@/utils/directives.js'
 import store from '@/store/store'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
@@ -24,7 +28,8 @@ import VueClipboard from 'vue-clipboard2'
 VueClipboard.config.autoSetContainer = true // add this line
 
 Vue.use(VueClipboard)
-
+Vue.use(AOS);
+AOS.init()
 Vue.mixin(loadding)
 Vue.use(ElementUI, {
   size: 'small'

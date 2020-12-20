@@ -21,16 +21,27 @@
       <top-nav></top-nav>
     </div>
     
-     <div class="about-me"></div> 
-    <div id="web-skill" style="background-color:red"></div>
+    <div id="about-me">
+       <about-me-page></about-me-page>
+    </div> 
+    <div id="web-skill">
+      <web-skill-page></web-skill-page>
+    </div> 
+    <!-- <div id='web-skill' data-aos="flip-left"  style="width:100px; height:100px; background-color:red">dkashdlkhaslkdjhaslkjh</div>
+    <div id='web-skill' data-aos="fade-down" style="width:100px; height:100px; background-color:red">dkashdlkhaslkdjhaslkjh</div>
+    <div id='web-skill' data-aos="fade-down" style="width:100px; height:100px; background-color:red">dkashdlkhaslkdjhaslkjh</div>
+    <div id='web-skill' data-aos="fade-down" style="width:100px; height:100px; background-color:red">dkashdlkhaslkdjhaslkjh</div>
+    <div id='web-skill' data-aos="fade-down" style="width:100px; height:100px; background-color:red">dkashdlkhaslkdjhaslkjh</div>
     <div class="my-experience"></div>
-    <div class="contact-me"></div>
+    <div class="contact-me"></div> -->
   </div>
 </template>
 
 <script>
 import firstPage from '../components/FirstPage'
 import topNav from '../components/TopNav'
+import aboutMePage from '../components/AboutMePage'
+import webSkillPage from '../components/WebSkillPage'
 
 export default {
   name: 'Manage',
@@ -41,7 +52,9 @@ export default {
   },
   components: {
     firstPage,
-    topNav
+    topNav,
+    aboutMePage,
+    webSkillPage
   },
   methods: {
 
@@ -53,7 +66,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.first-page, .about-me, #web-skill{
+.first-page, #about-me, #web-skill{
   position: relative;
   // overflow: visible;
   width: 100%;
