@@ -7,7 +7,7 @@
 1. vue框架
 2. element-ui
 3. less
-4.Aos滑动
+4. Aos滑动效果
 
 
 **写着玩玩**
