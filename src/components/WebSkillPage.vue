@@ -11,21 +11,37 @@
     </div>
       <div class="icons">
         <div data-aos="zoom-in" data-aos-delay="100" >
-          <skill-item class="icon" icon='&#xe602;' text='HTML' content='我都维护会计师的回复会计核算懒得看,dksahdkhaskdhksa'></skill-item>
+          <skill-item class="icon" icon='&#xe602;' text='HTML' content='
+            熟练运用html标签/
+            熟悉html5新特性/
+            熟悉Dom模型/
+            熟练HTML熟悉盒模型和各类布局方式、能够根据设计图实现页面布局和交互效果/
+            静态页面编写熟练'></skill-item>
         </div>
         <div data-aos="zoom-in" data-aos-delay="100" >
-          <skill-item class="icon" icon='&#xe602;' text='HTML' content='我都维护会计师的回复会计核算懒得看'></skill-item>
+          <skill-item class="icon" icon='&#xe601;' text='CSS' content='
+            熟悉CSS及CSS3新属性/
+            了解@keyframes制作动画效果/
+            熟悉transform制作过渡效果/
+            了解LESS预处理器'></skill-item>
         </div>
         <div data-aos="zoom-in" data-aos-delay="100" >
-          <skill-item class="icon" icon='&#xe602;' text='HTML' content='我都维护会计师的回复会计核算懒得看'></skill-item>
+          <skill-item class="icon" icon='&#xe6f8;' text='JS' content='熟悉js基础/熟悉各种基础的api调用/熟悉js继承'></skill-item>
+        </div>
+      </div>
+      <div class="icons">
+        <div data-aos="zoom-in" data-aos-delay="100" >
+          <skill-item class="icon" icon='&#xe72f;' text='LESS' content='
+            熟悉SASS嵌套/
+            其他有些了解'></skill-item>
         </div>
         <div data-aos="zoom-in" data-aos-delay="100" >
-          <skill-item class="icon" icon='&#xe602;' text='HTML' content='我都维护会计师的回复会计核算懒得看'></skill-item>
+          <skill-item class="icon" icon='&#xe6c5;' text='VUE' content='
+          熟悉模块组件化/
+          熟悉Vue.js处理移动端的模块开发/
+          熟悉如vue-cli,vue-router,axios,vuex,webpack,git等的使用/
+          目前主要用的是VUE'></skill-item>
         </div>
-        <div data-aos="zoom-in" data-aos-delay="100" >
-          <skill-item class="icon" icon='&#xe602;' text='HTML' content='我都维护会计师的回复会计核算懒得看'></skill-item>
-        </div>
-
       </div>
 
   </div>
@@ -65,7 +81,7 @@ export default {
   display: flex;
   justify-content: center;
   .icon{
-    margin: 100px;
+    margin: 50px 80px 30px;
   }
 }
 </style>

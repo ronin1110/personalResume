@@ -45,7 +45,7 @@ export default {
   },
   methods: {
     init() {
-      this.contentArray =  this.content.split(',')
+      this.contentArray =  this.content.split('/')
     }
   },
   mounted() {
@@ -106,6 +106,8 @@ export default {
 
 .content{
   margin: 20px;
+  line-height: 25px;
   color: white;
+  word-break: break-all;
 }
 </style>

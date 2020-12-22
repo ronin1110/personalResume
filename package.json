@@ -44,7 +44,7 @@
     "last 2 versions",
     "not dead"
   ],
-  "description": "> 该项目为龙游通应用的通用模板，新增应用时可直接复制过去，直接搭建，然后修改package.json中项目名称，然后应用有对应的修改地方，也需要同步到模板项目中，方便后续维护",
+  "description": "",
   "main": "babel.config.js",
   "author": "",
   "license": "ISC"
