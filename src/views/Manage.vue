@@ -27,6 +27,12 @@
     <div id="web-skill">
       <web-skill-page></web-skill-page>
     </div> 
+    <div id="some-demo">
+      <some-demo-page></some-demo-page>
+    </div> 
+    <div id="my-experience-page">
+      <my-experience-page></my-experience-page>
+    </div> 
     <!-- <div id='web-skill' data-aos="flip-left"  style="width:100px; height:100px; background-color:red">dkashdlkhaslkdjhaslkjh</div>
     <div id='web-skill' data-aos="fade-down" style="width:100px; height:100px; background-color:red">dkashdlkhaslkdjhaslkjh</div>
     <div id='web-skill' data-aos="fade-down" style="width:100px; height:100px; background-color:red">dkashdlkhaslkdjhaslkjh</div>
@@ -42,6 +48,8 @@ import firstPage from '../components/FirstPage'
 import topNav from '../components/TopNav'
 import aboutMePage from '../components/AboutMePage'
 import webSkillPage from '../components/WebSkillPage'
+import someDemoPage from '../components/SomeDemoPage'
+import myExperiencePage  from '../components/MyExperiencePage'
 
 export default {
   name: 'Manage',
@@ -54,7 +62,9 @@ export default {
     firstPage,
     topNav,
     aboutMePage,
-    webSkillPage
+    webSkillPage,
+    someDemoPage,
+    myExperiencePage
   },
   methods: {
 
@@ -66,12 +76,12 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.first-page, #about-me, #web-skill{
+.first-page, #about-me, #web-skill, #some-demo{
   position: relative;
   // overflow: visible;
-  width: 100%;
+  min-width: 320px;
   // height: 100%;
-  height: calc(100vh - 70px);
+  min-height: calc(100vh - 70px);
 }
 .top-nav{
   height: 100px;
