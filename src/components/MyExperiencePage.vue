@@ -7,10 +7,12 @@
 <template>
   <div>
     <div data-aos="flip-up" data-aos-duration='1000'>
-      <page-info upText='项目展示' downText='SOME DEMO'></page-info>
+      <page-info upText='我的经历' downText='MY EXPERIENCE'></page-info>
     </div>
     <div class="items">
-      <time-line></time-line>
+      <!-- <div data-aos='flip-up'> -->
+        <time-line></time-line>
+      <!-- </div> -->
     </div>
 
   </div>
@@ -46,9 +48,10 @@ export default {
 <style lang="less" scoped>
 .items{
   height: 100%;
+  margin: 10%;
   display: flex;
   justify-content: center;
-  margin: 0 10%;
+  margin: 10%;
   .item{
     min-width: 150px;
     max-width: 220px;

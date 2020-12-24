@@ -5,20 +5,25 @@
  * @LastEditors: yaolin
 -->
 <template>
+
     <div class="time-line">
       <!-- <div class="start">
         <div class="iconfont">&#xe60b;</div>
       </div> -->
+
       <div v-for="(thing, index) in things" :key="index" :class="{'thing': true,'state-1': index%2 === 1 ? false : true}">
         <div :class="{'text': true, 'state-0': index%2 === 0 ? false : true}">
-          <div class="time"> {{thing.time}}</div>
-          <div class="content">{{thing.content}}</div>
+          <div class="time" data-aos='zoom-out' data-aos-duration='3000'> {{thing.time}}</div>
+          <div class="content" data-aos='zoom-out' data-aos-delay='500' data-aos-duration='3000' >{{thing.content}}</div>
         </div>
         <div class="icon">
             <div class="iconfont">&#xe60b;</div>
         </div>
       </div>
-    </div>
+
+
+    </div> 
+
 </template>
 
 <script>
@@ -28,16 +33,12 @@ export default {
       type:Array,
       default: () => [
         {
-          time:'2006',
-          content:'dhlaskjdlkajsldkjl'
+          time:'浙江工业大学(2017-2021)',
+          content:'计算机数字媒体技术专业'
         },
         {
-          time:'2006',
-          content:'dhlaskjdlkajsldkjl'
-        },
-        {
-          time:'2006',
-          content:'dhlaskjdlkajsldkjl'
+          time:'杭州联汇科技股份有限公司（2020.7.05-2020.11.26）',
+          content:'前端开发实习生，VUE + LESS + ELEMENTUI + VantUI 等，主要工作是进行项目后台页面的开发，也有部分h5页面的开发'
         }
       ]
     }
@@ -111,18 +112,18 @@ export default {
   z-index: 1;
 }
 .time{
+  margin: o;
   font-size: 40px;
   font-weight: 700;
+  transition: all 1s;
   &:hover{
     & + .content{
-      // display: block;
-      opacity: 1;
+      // opacity: 1;
     }
   }
 }
 .content{
-  // display: none;
-  opacity: 0;
+  // opacity: 0;
   transition: all 1s;
   font-size: 20px;
 }
