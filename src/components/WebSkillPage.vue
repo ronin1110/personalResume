@@ -30,6 +30,7 @@
           <skill-item class="icon" icon='&#xe6f8;' text='JS' content='熟悉js基础/熟悉各种基础的api调用/熟悉js继承'></skill-item>
         </div>
       </div>
+      
       <div class="icons">
         <div data-aos="zoom-in" data-aos-delay="100" >
           <skill-item class="icon" icon='&#xe72f;' text='LESS' content='
@@ -82,7 +83,7 @@ export default {
   display: flex;
   justify-content: center;
   .icon{
-    margin: 50px 80px 30px;
+    margin: 50px 80px 20px;
   };
 }
 </style>
