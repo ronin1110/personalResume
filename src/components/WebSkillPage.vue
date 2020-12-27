@@ -6,7 +6,8 @@
 -->
 <template>
   <div>
-    <div data-aos="flip-up" data-aos-duration='1000'>
+  <!-- <div style="  background-image: url('http://img.fangjiesong.top/resume_slide3.jpg');"> -->
+    <div data-aos="fade-up" data-aos-duration='1000'>
       <page-info upText='前端技能' downText='WEB SKILL'></page-info>
     </div>
       <div class="icons">
@@ -32,7 +33,7 @@
       <div class="icons">
         <div data-aos="zoom-in" data-aos-delay="100" >
           <skill-item class="icon" icon='&#xe72f;' text='LESS' content='
-            熟悉SASS嵌套/
+            熟悉LESS嵌套/
             其他有些了解'></skill-item>
         </div>
         <div data-aos="zoom-in" data-aos-delay="100" >
@@ -82,6 +83,6 @@ export default {
   justify-content: center;
   .icon{
     margin: 50px 80px 30px;
-  }
+  };
 }
 </style>

@@ -51,7 +51,7 @@
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  background: #345;
+  // background: #345;
 }
 .avatar{
   position: relative;

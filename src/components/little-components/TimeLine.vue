@@ -38,7 +38,7 @@ export default {
         },
         {
           time:'杭州联汇科技股份有限公司（2020.7.05-2020.11.26）',
-          content:'前端开发实习生，VUE + LESS + ELEMENTUI + VantUI 等，主要工作是进行项目后台页面的开发，也有部分h5页面的开发'
+          content:'前端开发实习生，VUE + LESS + ElementUI + VantUI 等，主要工作是进行项目后台页面的开发，也有部分h5页面的开发'
         }
       ]
     }

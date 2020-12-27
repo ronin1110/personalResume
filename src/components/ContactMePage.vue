@@ -5,9 +5,9 @@
  * @LastEditors: yaolin
 -->
 <template>
-  <div>
-    <div data-aos="flip-up" data-aos-duration='1000'>
-      <page-info upText='联系我' downText='CONTACT ME'></page-info>
+  <div >
+    <div data-aos="fade-up" data-aos-duration='1000'>
+      <page-info  upText='联系我' downText='CONTACT ME'></page-info>
     </div>
     <div class="items">
       <div class="out">
@@ -19,7 +19,7 @@
           <div data-aos='fade-left' data-aos-duration='800' @click="handleClickIcon('wechat')">
             <span class="iconfont">&#xe61e;</span>
           </div>
-          <div data-aos='fade-left' data-aos-duration='1100' @click="handleClickIcon('github')">
+          <div data-aos='fade-left' data-aos-duration='1100' @click="handleClickIcon('qq')">
             <span class="iconfont">&#xe619;</span>
           </div>
         </div>
@@ -27,11 +27,10 @@
     </div>
     <el-dialog
       title=""
-      :visible.sync="dialogVisible"
-      width="30%">
-      <div>
+      :visible.sync="dialogVisible">
+      <div style="display:flex; justify-content:center;">
         <el-image
-          style="width: 100px; height: 100px"
+          style="width: 60%; height: 60%"
           :src="url"
           fit="fill"></el-image>
       </div>
@@ -70,8 +69,13 @@ export default {
         case 'github':{
           window.open('https://github.com/ronin1110')
           break;}
-        case 'github':{
-          this.url = ''
+        case 'wechat':{
+          this.url = require('../assets/image/微信二维码.jpg')
+          this.dialogVisible = true
+          break;}
+        case 'qq':{
+          this.url = require('../assets/image/QQ二维码.png')
+          this.dialogVisible = true
           break;}
       
         default:
@@ -121,6 +125,7 @@ export default {
 .text{
   font-size: 18px;
   font-weight: 700;
+  color: white;
 }
 .icons{
   cursor: pointer;
@@ -133,5 +138,6 @@ export default {
 .iconfont{
   font-size: 40px;
   margin: 20px;
+  color: white;
 }
 </style>

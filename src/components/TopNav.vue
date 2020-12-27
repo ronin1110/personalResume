@@ -5,7 +5,7 @@
  * @LastEditors: yaolin
 -->
 <template>
-  <div style="height:100%;width:100%">
+  <div style="height:100%;width:100%; background-image: url(https://images.unsplash.com/photo-1542293787938-c9e299b880cc?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80);">
     <div class="topNav--init">
       <div class="first">
         <!-- <a href="#">姚霖</a> -->
@@ -26,11 +26,11 @@
       </div>
 
       <div class="second">
-        <anchor href='#' text='关于我'></anchor>
-        <anchor href='#' text='经历'></anchor>
-        <anchor href='#' text='熟悉的技术'></anchor>
-        <anchor href='#' text='wode wode '></anchor>
-        <anchor href='#' text='wode wode '></anchor>
+        <anchor href='#about-me' text='关于我'></anchor>
+        <anchor href='#web-skill' text='前端技能'></anchor>
+        <anchor href='#some-demo' text='一些项目'></anchor>
+        <anchor href='#my-experience-page' text='我的经历'></anchor>
+        <anchor href='#contact-me-page' text='联系我'></anchor>
       </div>
 
       <!-- <div class="card">
@@ -113,9 +113,9 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 60px;
   width: 100%;
-  background-color: #345;
+  // background-color: #345;
 }
 .first{
   display: flex;

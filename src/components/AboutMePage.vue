@@ -6,7 +6,7 @@
 -->
 <template>
   <div>
-    <div data-aos="flip-up" data-aos-duration='1000'>
+    <div data-aos="fade-up" data-aos-duration='1000'>
       <page-info upText='关于我' downText='ABOUT ME'></page-info>
     </div>
       <div class="icons">

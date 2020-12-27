@@ -14,7 +14,7 @@ module.exports = {
 
   // 当运行 vue-cli-service build 时生成的生产环境构建文件的目录。
   // 注意目标目录在构建之前会被清除 (构建时传入 --no-clean 可关闭该行为)
-  outputDir: 'sqtman',
+  outputDir: 'ronin769-personalResum',
 
   // 如果你不需要生产环境的 source map，可以将其设置为 false 以加速生产环境构建。
   productionSourceMap: false,
