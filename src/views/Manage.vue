@@ -96,9 +96,9 @@ export default {
   height: 100%;
   min-height: 100vh;
 }
-#contact-me-page{
-  min-height: 100% !important;
-}
+// #contact-me-page{
+//   min-height: calc(100% + 40px) !important;
+// }
 #my-experience-page{
   &::before{
     content: '';
