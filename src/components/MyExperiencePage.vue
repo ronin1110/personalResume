@@ -48,14 +48,13 @@ export default {
 <style lang="less" scoped>
 .items{
   height: 100%;
-  margin: 10%;
+  width: 100%;
   display: flex;
   justify-content: center;
-  margin: 10%;
+  flex-wrap: wrap;
   .item{
     min-width: 150px;
     max-width: 220px;
-    margin: 20px;
   }
 }
 </style>

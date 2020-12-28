@@ -8,7 +8,7 @@
   <div style="width:100%;height:100%">
     <div class="firstPage">
       <div class="avatar">
-        <el-avatar src='https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2018205249,2032593992&fm=26&gp=0.jpg' :size='200'></el-avatar>
+        <el-avatar src='https://avatars0.githubusercontent.com/u/48253106?s=400&u=d75b79e91307961d838a3749aec3a513607023d9&v=4' :size='200'></el-avatar>
       </div>
       <div class="text--hello">
         <div class="text">
@@ -84,12 +84,12 @@
 .text--hello{
   position: relative;
   text-align: center;
-  font-size: 70px;
+  font-size: 2.5rem;
   font-weight: 700;
   color: transparent;
 
   // background-image: linear-gradient(50deg, transparent 0, transparent 40%,rgba(51,136,238,.8) 50%,rgba(51,136,238,.8) 55%, transparent 80%);
-   background-image: linear-gradient(30deg, rgb(51, 136, 238), rgb(255, 255, 255), rgb(51, 136, 238));
+  background-image: linear-gradient(30deg, rgb(51, 136, 238), rgb(255, 255, 255), rgb(51, 136, 238));
   background-clip: text; // 背景裁剪范围是文字
   
   animation: light-move 3s infinite;
@@ -106,8 +106,8 @@
 }
 
 .text--descrip{
-  font-size: 30px;
-  font-weight: 700px;
+  font-size: 2rem;
+  font-weight: 700;
   color: white;
   font-style: italic;
 }

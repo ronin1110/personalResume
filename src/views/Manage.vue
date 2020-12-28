@@ -12,30 +12,31 @@
 
     <!-- <div style="position:sticky; top:100px;height:10px;color:red">daslkdhakshdklashlikhj</div> -->
 
-    <div id="first-page" style="background-image: url(http://img.fangjiesong.top/resume_slide3.jpg);">
+    <div id="first-page" style="background-image: url(http://img.fangjiesong.top/resume_slide3.jpg); background-attachment: fixed">
       <first-page></first-page>
     </div>
-
 
     <div class='top-nav'>
       <top-nav></top-nav>
     </div>
     
-    <div id="about-me" style="background-image: url('http://img.fangjiesong.top/resume_slide1.jpg')">
+    <div id="about-me">
        <about-me-page></about-me-page>
     </div> 
-    <div id="web-skill" >
+    <div id="web-skill" style="background-image: url('http://img.fangjiesong.top/resume_slide1.jpg'); background-attachment: fixed">
       <web-skill-page></web-skill-page>
     </div> 
-    <div id="some-demo" style="background: url(https://images.unsplash.com/photo-1542319150-fb62a2e8c476?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80) no-repeat center center/cover">
+    <div id="some-demo" >
       <some-demo-page></some-demo-page>
     </div> 
-    <div id="my-experience-page">
-      <my-experience-page></my-experience-page>
+    <div id="my-experience-page" style="background: url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1207%2F18%2Fc1%2F12378628_1342603613470.jpg&refer=http%3A%2F%2Fimg.pconline.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1611769173&t=bd0c3103faa6bad766984f416fdb61c6) no-repeat center center/cover; background-attachment: fixed">
+      <my-experience-page></my-experience-page >
     </div> 
-    <div id="contact-me-page" style="background: url(https://images.unsplash.com/photo-1542300058-849d3b08aa0f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1268&q=80) no-repeat center center/cover;">
+    <div id="contact-me-page" >
       <contact-me-page></contact-me-page>
     </div>
+
+
     <!-- <div id='web-skill' data-aos="flip-left"  style="width:100px; height:100px; background-color:red">dkashdlkhaslkdjhaslkjh</div>
     <div id='web-skill' data-aos="fade-down" style="width:100px; height:100px; background-color:red">dkashdlkhaslkdjhaslkjh</div>
     <div id='web-skill' data-aos="fade-down" style="width:100px; height:100px; background-color:red">dkashdlkhaslkdjhaslkjh</div>
@@ -89,10 +90,25 @@ export default {
 }
 #first-page, #about-me, #web-skill, #some-demo, #contact-me-page, #my-experience-page{
   position: relative;
+  width: 100%;
   // overflow: visible;
-  min-width: 320px;
   // height: 100%;
-  height: 100vh
+  height: 100%;
+  min-height: 100vh;
+}
+#contact-me-page{
+  min-height: 100% !important;
+}
+#my-experience-page{
+  &::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    // z-index: -1;
+    position: absolute;
+    background-color: rgba(255, 2555, 255, .3);
+  }
 }
 .top-nav{
   width: 100%;

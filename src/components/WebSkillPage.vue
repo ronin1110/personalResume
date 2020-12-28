@@ -16,7 +16,7 @@
             熟练运用html标签/
             熟悉html5新特性/
             熟悉Dom模型/
-            熟练HTML熟悉盒模型和各类布局方式、能够根据设计图实现页面布局和交互效果/
+            熟悉盒模型和各类布局方式、能够根据设计图实现页面布局和交互效果/
             静态页面编写熟练'></skill-item>
         </div>
         <div data-aos="zoom-in" data-aos-delay="100" >
@@ -29,14 +29,12 @@
         <div data-aos="zoom-in" data-aos-delay="100" >
           <skill-item class="icon" icon='&#xe6f8;' text='JS' content='熟悉js基础/熟悉各种基础的api调用/熟悉js继承'></skill-item>
         </div>
-      </div>
-      
-      <div class="icons">
         <div data-aos="zoom-in" data-aos-delay="100" >
           <skill-item class="icon" icon='&#xe72f;' text='LESS' content='
             熟悉LESS嵌套/
             其他有些了解'></skill-item>
         </div>
+        
         <div data-aos="zoom-in" data-aos-delay="100" >
           <skill-item class="icon" icon='&#xe6c5;' text='VUE' content='
           熟悉模块组件化/
@@ -45,6 +43,8 @@
           目前主要用的是VUE'></skill-item>
         </div>
       </div>
+      
+
 
   </div>
 </template>
@@ -54,7 +54,6 @@ import pageInfo from '../components/little-components/PageInfo'
 import imageFlash from '../components/little-components/ImageFlash'
 import iconShowing from '../components/little-components/IconShowing'
 import skillItem from '../components/little-components/SkillItem'
-import SkillItem from './little-components/SkillItem.vue'
 
 export default {
   props: {
@@ -67,7 +66,6 @@ export default {
     skillItem
   },
   data(){
-    SkillItem
     return {
       
     }
@@ -82,8 +80,9 @@ export default {
 .icons{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   .icon{
-    margin: 50px 80px 20px;
+    margin: 2rem 3rem 1rem;
   };
 }
 </style>

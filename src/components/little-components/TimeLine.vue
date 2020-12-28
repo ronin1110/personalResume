@@ -34,7 +34,7 @@ export default {
       default: () => [
         {
           time:'浙江工业大学(2017-2021)',
-          content:'计算机数字媒体技术专业'
+          content:'计算机数字媒体技术专业：计算机组成，计算机网络，算法，数据结构，操作系统等计算机专业课。'
         },
         {
           time:'杭州联汇科技股份有限公司（2020.7.05-2020.11.26）',
@@ -59,7 +59,7 @@ export default {
 
 <style lang="less" scoped>
 .time-line{
-  width: 100%;
+  width: 90%;
   position: relative;
   // background-color: green;
   display: flex;
@@ -75,14 +75,9 @@ export default {
     border-right: 3px solid black;
   }
 }
-// .start{
-//   display: flex;
-//   justify-content: center;
-//   z-index: 1;
-//   margin-bottom: 100px;
-// }
+
 .iconfont{
-  font-size: 50px;
+  font-size: 2rem;
   background-color: white;
   border-radius: 50%;
 }
@@ -101,7 +96,7 @@ export default {
 .text{
   width: 45%;
   position: relative;
-  z-index: 2;
+  // color: white;
 }
 .icon{
   width: 100%;
@@ -112,8 +107,8 @@ export default {
   z-index: 1;
 }
 .time{
-  margin: o;
-  font-size: 40px;
+  margin: 0;
+  font-size: 1.8rem;
   font-weight: 700;
   transition: all 1s;
   &:hover{
@@ -124,7 +119,10 @@ export default {
 }
 .content{
   // opacity: 0;
+  display: inline;
+  // background-color: rgba(288, 255, 255, .4);
   transition: all 1s;
-  font-size: 20px;
+  font-size: 1rem;
+  
 }
 </style>

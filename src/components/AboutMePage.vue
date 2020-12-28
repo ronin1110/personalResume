@@ -9,21 +9,21 @@
     <div data-aos="fade-up" data-aos-duration='1000'>
       <page-info upText='关于我' downText='ABOUT ME'></page-info>
     </div>
-      <div class="icons">
-        <div data-aos="zoom-in" data-aos-delay="100" >
-          <icon-showing class="icon" icon='&#xe614;' upText='年龄' downText='22'></icon-showing>
-        </div>
-        <div data-aos="zoom-in" data-aos-delay="200">
-        <icon-showing class="icon" icon='&#xe657;' upText='学历' downText='大学本科'></icon-showing>
-        </div>
-        <div data-aos="zoom-in" data-aos-delay="300">
-        <icon-showing class="icon" icon='&#xe61b;' upText='坐标' downText='杭州'></icon-showing>
-        </div>
-        <div data-aos="zoom-in" data-aos-delay="400">
-        <icon-showing class="icon" icon='&#xe644;' upText='性别' downText='男'></icon-showing>
-        </div>
-
+    <div class="icons">
+      <div data-aos="zoom-in" data-aos-delay="100" >
+        <icon-showing class="icon" icon='&#xe614;' upText='年龄' downText='22'></icon-showing>
       </div>
+      <div data-aos="zoom-in" data-aos-delay="200">
+        <icon-showing class="icon" icon='&#xe657;' upText='学历' downText='大学本科'></icon-showing>
+      </div>
+      <div data-aos="zoom-in" data-aos-delay="300">
+        <icon-showing class="icon" icon='&#xe61b;' upText='坐标' downText='杭州'></icon-showing>
+      </div>
+      <div data-aos="zoom-in" data-aos-delay="400">
+        <icon-showing class="icon" icon='&#xe644;' upText='性别' downText='男'></icon-showing>
+      </div>
+
+    </div>
 
   </div>
 </template>
@@ -57,8 +57,9 @@ export default {
 .icons{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   .icon{
-    margin: 100px;
+    margin: 4rem;
   }
 }
 </style>

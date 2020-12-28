@@ -98,8 +98,8 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 400px;
-  height: 350px;
+  width: 16rem;
+  height: 14rem;
   // background-color: red;
   &::before{
     content: '';
@@ -123,21 +123,21 @@ export default {
   }
 }
 .text{
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 700;
-  color: white;
+  // color: white;
 }
 .icons{
   cursor: pointer;
   display: flex;
-  margin-top: 20px;
+  margin-top: 1.8rem;
   a{
     text-decoration: none;
   }
 }
 .iconfont{
-  font-size: 40px;
-  margin: 20px;
-  color: white;
+  font-size: 2rem;
+  margin: 1rem;
+  // color: white;
 }
 </style>

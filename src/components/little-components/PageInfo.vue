@@ -44,14 +44,14 @@
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 100px 0 0 0;
+  padding: 4rem 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .up-text ,.down-text{
-  font-size: 38px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #345;
   text-shadow: 0 3px 5px #345;

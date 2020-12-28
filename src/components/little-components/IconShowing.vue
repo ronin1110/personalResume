@@ -5,10 +5,11 @@
  * @LastEditors: yaolin
 -->
 <template>
-  <div style="width:120px;">
+  <div class="icon-showing">
     <div class="out">
       <div v-html="icon" class="iconfont "></div>
     </div>
+    
     <div class="text">
       <div class='upText'>{{upText}}</div>
       <div class="downText">{{downText}}</div>
@@ -49,28 +50,32 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.icon-showing{
+  width: 6rem;
+  height: 6rem;
+}
 .out{
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   width: 100%;
-  height: 120px;
+  height: 100%;
   background-color: #345;
-  font-size: 50px !important;
 }
 .iconfont{
   margin: 0;
   padding: 0;
   color: white;
   display: block;
-  font-size: 50px;
+  font-size: 3rem;
 }
+
 .text{
   width: 100%;
   position: relative;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 0.7rem;
 }
 .downText{
   position: relative;
@@ -79,7 +84,7 @@ export default {
 .downText::after{
   content: '';
   position: absolute;
-  width: 120px;
+  width: 100%;
   height: 2px;
   top: 0;
   left: 0;

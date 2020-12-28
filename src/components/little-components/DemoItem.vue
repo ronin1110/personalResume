@@ -50,8 +50,10 @@ export default {
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 300px;
-  height: 260px;
+  width: 12rem;
+  min-width: 300px;
+  height: 10rem;
+  min-height: 270px;
   background-color: rgba(0, 0, 0, 0);
   transition: all .5s;
   &:hover{

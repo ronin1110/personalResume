@@ -57,9 +57,10 @@ export default {
 <style lang="less" scoped>
 .out{
   position: relative;
-  width: 220px;
+  width: 30vw;
+  max-width: 220px;
   height:300px;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 
   &:hover .front{
     transform: rotateY(180deg);
@@ -70,7 +71,7 @@ export default {
 }
 
 .both{
-  box-shadow: 0 0 10px #38e, inset 0 0 10px #38e;
+  box-shadow: 0 0 0.5rem #38e, inset 0 0 0.5rem #38e;
   background-color: #345;
   width: 100%;
   height: 100%;
@@ -84,7 +85,7 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 32px;
+  font-size: 1rem;
   font-weight: 700;
   color: white;
 
@@ -96,18 +97,24 @@ export default {
 
 
 .iconfont{
-  font-size: 100px;
+  font-size: 4rem;
   color: white; 
-  margin: 20px;
+  margin: 1rem;
 }
 
 .text{
 }
 
 .content{
-  margin: 20px;
-  line-height: 25px;
+  margin: 10px;
+  font-size: 0.8rem;
+  // line-height: 2rem;
   color: white;
   word-break: break-all;
+  ul{
+    // padding-inline-start: 1rem;
+    // overflow: hidden;
+    list-style-position: inside;
+  }
 }
 </style>
