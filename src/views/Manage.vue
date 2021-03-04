@@ -12,7 +12,8 @@
 
     <!-- <div style="position:sticky; top:100px;height:10px;color:red">daslkdhakshdklashlikhj</div> -->
 
-    <div id="first-page" style="background-image: url(http://img.fangjiesong.top/resume_slide3.jpg); background-attachment: fixed">
+    <!-- <div id="first-page" style="background-image: url(http://img.fangjiesong.top/resume_slide3.jpg); background-attachment: fixed"> -->
+    <div id="first-page">
       <first-page></first-page>
     </div>
 
@@ -23,13 +24,13 @@
     <div id="about-me">
        <about-me-page></about-me-page>
     </div> 
-    <div id="web-skill" style="background-image: url('http://img.fangjiesong.top/resume_slide1.jpg'); background-attachment: fixed">
+    <div id="web-skill" >
       <web-skill-page></web-skill-page>
     </div> 
     <div id="some-demo" >
       <some-demo-page></some-demo-page>
     </div> 
-    <div id="my-experience-page" style="background: url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1207%2F18%2Fc1%2F12378628_1342603613470.jpg&refer=http%3A%2F%2Fimg.pconline.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1611769173&t=bd0c3103faa6bad766984f416fdb61c6) no-repeat center center/cover; background-attachment: fixed">
+    <div id="my-experience-page">
       <my-experience-page></my-experience-page >
     </div> 
     <div id="contact-me-page" >
@@ -95,6 +96,18 @@ export default {
   // height: 100%;
   height: 100%;
   min-height: 100vh;
+}
+#first-page{
+  background-image: url('../assets/image/resume_bg1.jpg');
+  background-attachment: fixed
+}
+#web-skill{
+  background-image: url('../assets/image/resume_bg2.jpg');
+  background-attachment: fixed
+}
+#my-experience-page{
+  background-image: url('../assets/image/resume_bg3.jpg');
+  background-attachment: fixed
 }
 // #contact-me-page{
 //   min-height: calc(100% + 40px) !important;
